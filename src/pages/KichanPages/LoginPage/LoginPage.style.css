@@ -1,4 +1,18 @@
 .login-page{
     min-width: 100vw;
     min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container{
+    position:relative;
+    width: 40%;
+    height: 35em;
+    border: 2px solid black;
+    border-radius: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
