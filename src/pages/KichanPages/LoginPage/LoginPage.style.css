@@ -15,4 +15,33 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.login-title-section{
+    font-size: 2em;
+    margin-bottom: 1.5em;
+}
+
+.login-subtitle-section{
+    font-size: 1.4em;
+    margin-bottom: 3em;
+}
+
+.login-box{
+    margin-bottom: 1em;
+}
+
+.login-button{
+    all:unset;
+    border: 1px;
+    padding: 0.4em 1.5em;
+    border-radius: 8px;
+    color: white;
+    background-color: #A8DADC;
+}
+
+.login-button:hover{
+    cursor: pointer;
+    background-color: #a8dadcab;
 }

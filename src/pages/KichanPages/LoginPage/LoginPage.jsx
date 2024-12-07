@@ -1,18 +1,35 @@
-import React from 'react'
-import "./LoginPage.style.css"
+import React, {useState} from "react";
+import "./LoginPage.style.css";
+import LoginInputRow from "./components/LoginInputRow";
 
-const LoginPage = () => {
+const LoginPage = ({setPage}) => {
+  const [id, setId] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleLogin = () => {
+    if(id==="admin"&&password==="1234"){
+        alert("로그인되었습니다.");
+        setPage("ClockProblem1");
+    }
+  };
+
   return (
-    <div className='login-page'>
-      <div className='login-container'>
-        <div className='login-title-section'>WiseBloom</div>
-        <div className='login-subtitle-section'></div>
-        <div className='login-box'>
-            
+    <div className="login-page">
+      <div className="login-container">
+        <div className="login-title-section">WiseBloom</div>
+        <div className="login-subtitle-section">
+          노년의 건강한 두뇌, 오늘부터 함께 시작하세요!
         </div>
+        <div className="login-box">
+          <LoginInputRow sort="id" setInputContent={setId} />
+          <LoginInputRow sort="password" setInputContent={setPassword} />
+        </div>
+        <button onClick={handleLogin} className="login-button">
+          로그인
+        </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default LoginPage
+export default LoginPage;
