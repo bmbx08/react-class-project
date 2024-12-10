@@ -1,12 +1,12 @@
 import React from 'react'
 import "./ClockProblem1.style.css"
 
-const ClockProblem1 = ({setPage}) => {
+const ClockPage1 = ({setPage}) => {
   return (
     <div>
-      ClockProblem1
+      ClockPage1
     </div>
   )
 }
 
-export default ClockProblem1
+export default ClockPage1
