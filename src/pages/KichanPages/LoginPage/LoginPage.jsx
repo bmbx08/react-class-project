@@ -9,7 +9,7 @@ const LoginPage = ({setPage}) => {
   const handleLogin = () => {
     if(id==="admin"&&password==="1234"){
         alert("로그인되었습니다.");
-        setPage("ClockProblem1");
+        setPage("ClockPage1");
     }
   };
 
