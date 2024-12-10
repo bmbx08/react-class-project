@@ -1,5 +1,5 @@
 import React from 'react'
-import "./ClockProblem1.style.css"
+import "./ClockPage1.style.css"
 
 const ClockPage1 = ({setPage}) => {
   return (

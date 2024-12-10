@@ -1,6 +1,6 @@
 import React from 'react'
 
-const DiaryPage = () => {
+const DiaryPage = ({setPage}) => {
   return (
     <div>
       

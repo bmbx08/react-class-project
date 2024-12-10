@@ -8,13 +8,13 @@ import TreePage2 from './pages/JooeunPages/TreePage2/TreePage2';
 import TreePage3 from './pages/JooeunPages/TreePage3/TreePage3';
 import Treepage4 from './pages/JooeunPages/TreePage4/Treepage4';
 import StuffPage1 from './pages/JiwooPages/StuffPage1/StuffPage1';
-import StuffPage2 from './pages/JiwooPages/StuffPage2/Stuffpage2';
-import StuffPage3 from './pages/JiwooPages/StuffPage3/Stuffpage3';
+import StuffPage2 from './pages/JiwooPages/StuffPage2/StuffPage2';
+import StuffPage3 from './pages/JiwooPages/StuffPage3/StuffPage3';
 import DiaryPage from './pages/JiwooPages/DiaryPage/DiaryPage';
 
 
 function App() {
-  const [page,setPage] = useState("LoginPage");
+  const [page,setPage] = useState("StuffPage1");
 
   return (
     <div>
