@@ -1,0 +1,122 @@
+.quiz_container {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 20px;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  }
+
+  .margin {
+    margin-bottom: 20px;
+  }
+  
+  .green_box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: fit-content;
+    padding: 10px 15px;
+    background-color: #fafad2;
+    border-radius: 10px;
+  }
+  
+  .box_text {
+    font-weight: bold;
+    color: #3e6d38;
+  }
+  
+  .img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  .red_text {
+    font-weight: bold;
+    color: #e74c3c;
+  }
+  
+  .table_container {
+    margin-bottom: 20px;
+  }
+  
+  .main_table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+  }
+  
+  .item_table {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  .title_table {
+    border: 1px solid #66cdaa;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #66cdaa;
+    background-color: #f0fff0;
+  }
+
+  .text_table{
+    width: 130px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .input_table {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    background-color: #fff;
+  }
+
+  .input_table_31{
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    background-color: #fff;
+  }
+  
+  .input {
+    width: 90%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .button {
+    display: block;
+    width: 120px;
+    padding: 10px;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #66cdaa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .underline {
+    text-decoration: underline;
+    text-underline-position: under;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
+  
