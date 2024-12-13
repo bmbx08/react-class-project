@@ -1,0 +1,203 @@
+.clock-page1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+  background-color: #dadeaa;
+}
+
+.clock-page1-container {
+  border: 1px solid black;
+  border-radius: 0.9em;
+  padding: 1em;
+  background-color: white;
+  margin-bottom: 5em;
+  min-width:25em;
+}
+
+.clock-page1-probinfo {
+  display: flex;
+  align-items: center;
+  font-family: "Pretendard-Bold";
+  margin-bottom: 0.5em;
+}
+
+.clock-plant-icon {
+  width: 2.2em;
+  margin-right: 0.2em;
+}
+
+.ProblemA-section{
+  margin-bottom: 1.5em;
+}
+
+.timeA-input-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  border-radius: 0.6em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.timeA-radio-section {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1.2em;
+}
+
+.time-radio {
+  all: unset;
+  font-size: 0.8em;
+  padding: 0.3em 0.8em;
+  border-radius: 0.8em;
+  background-color: rgba(210, 210, 210, 255);
+  color: white;
+}
+
+.time-radio:hover{
+    background-color:rgba(218, 222, 170, 0.5);
+}
+
+.time-radio.selected {
+  background-color: rgba(218, 222, 170, 255);
+}
+
+.time-radio:first-child {
+  margin-bottom: 0.4em;
+}
+
+.timeA-input-box {
+  margin-right: 0.6em;
+}
+
+.timeA-input {
+  all: unset;
+  border: 1px solid black;
+  width: 2em;
+  border-radius: 0.25em;
+  padding: 0.2em 0.5em;
+  text-align: center;
+}
+
+.redd-text{
+    color:red;
+    font-size: 0.9em;
+}
+
+.ProblemA-submit-section{
+    display:flex;
+    justify-content: flex-end;
+    margin-top: 1em;
+}
+
+.ProblemA-submit-button{
+    all:unset;
+    padding: 0.4em 1em;
+    background-color: rgba(210, 210, 210, 255);
+    color:white;
+    border-radius: 0.5em;
+    font-size: 0.9em;
+}
+
+.ProblemA-submit-button:hover{
+  background-color:rgba(218, 222, 170, 0.4);
+}
+
+.ProblemA-submit-button:active{
+  background-color:rgba(218, 222, 170, 0.8);
+}
+
+.choice-box-section{
+  display:flex;
+  justify-content: space-evenly;
+  width: 30em;
+  border: 1px solid gray;
+  border-radius: 0.6em;
+  flex-wrap: wrap;
+}
+
+.choice-box{
+  width:45%;
+  border: 1px solid gray;
+  border-radius: 0.6em;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
+  transition: ease-in-out 0.2s;
+}
+
+.choice-box:hover{
+  transform: scale(1.06);
+}
+
+.A-clock-box{
+  padding: 0.4em 0;
+}
+
+.choice-num-row{
+  border-top:1px solid gray;
+  border-radius: 0.3em;
+  width:100%;
+  display:flex;
+  justify-content: center;
+  padding: 0.2em 0;
+}
+
+.choice-num{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.3em;
+  height: 1.3em;
+  border:1px solid black;
+  border-radius: 100%;
+}
+
+.B-result-section{
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Pretendard-Bold";
+  margin-top: 1em;
+}
+
+.B-next-row{
+  text-align: center;
+}
+
+.B-next-button{
+  all:unset;
+  padding: 0.3em 1em;
+  background-color:#8D9429;
+  color:white;
+  border-radius: 0.5em;
+  margin-bottom: 1em;
+}
+
+.B-next-button:hover{
+  background-color:#8d942998;
+}
+
+.ProblemB-section .react-clock__second-hand__body{
+  display:none;
+}
+
+
+/*number input의 화살표 아이콘 제거*/
+.timeA-input {
+  -moz-appearance: textfield; 
+  -webkit-appearance: textfield; 
+  appearance: textfield; 
+}
+
+.timeA-input::-webkit-inner-spin-button,
+.timeA-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.timeA-input::-ms-clear {
+  display: none;
+}
