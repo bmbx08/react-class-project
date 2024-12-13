@@ -1,5 +1,6 @@
 const createLocationAnswer=({hour,minute,period,diff})=>{
     let answerHour = hour + diff;
+    let answerMinute= minute;
     let answerPeriod = period;
     if(answerHour===0){
         answerHour=12;
@@ -12,7 +13,8 @@ const createLocationAnswer=({hour,minute,period,diff})=>{
         answerHour-=12;
         answerPeriod = (answerPeriod==="오후"?"오전":"오후");
     }
-    let answerMinute= minute;
+    // if(answerPeriod/)
+    
     return {hour:answerHour,minute:answerMinute,period:answerPeriod};
 
     // let hour = new Date().getHours();

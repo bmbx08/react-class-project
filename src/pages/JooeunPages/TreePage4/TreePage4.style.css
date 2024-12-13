@@ -6,14 +6,8 @@
   background-color:white;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-
 .problem-img {
-  margin: 10px 20px;
+  /* margin: 10px 20px; */
   width: 100%;
 }
 

@@ -4,6 +4,8 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    background-color: #dadeaa;
+
 }
 
 .login-container{
@@ -39,10 +41,10 @@
     padding: 0.4em 1.5em;
     border-radius: 8px;
     color: white;
-    background-color: #A8DADC;
+    background-color: #8D9429;
 }
 
 .login-button:hover{
     cursor: pointer;
-    background-color: #a8dadcab;
+    background-color: #8d942985;
 }

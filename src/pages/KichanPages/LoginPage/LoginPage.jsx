@@ -7,7 +7,7 @@ const LoginPage = ({setPage}) => {
   const [password, setPassword] = useState("");
 
   const handleLogin = () => {
-    if(id==="admin"&&password==="1234"){
+    if(id==="user"&&password==="1234"){
       alert("로그인되었습니다.");
       setPage("ClockPage1");
     }
