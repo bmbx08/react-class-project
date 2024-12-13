@@ -1,0 +1,13 @@
+.clock-page-2{
+    display:flex;
+    justify-content: center;
+    padding-top: 5em;
+}
+
+.clock-page-2-container{
+    background-color:white;
+    min-width: 25em;
+    height: 10em;
+    border: 1px solid gray;
+    border-radius: 0.6em;
+}
