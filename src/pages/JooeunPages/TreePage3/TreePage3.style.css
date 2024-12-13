@@ -1,0 +1,31 @@
+.page28_2 {
+  padding-left: 15%;
+  padding-right: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.problem-img {
+  margin: 10px 20px;
+  width: 100%;
+}
+
+.problem-img td {
+  border: 1px solid black;
+  padding: 3px;
+  text-align: center;
+}
+
+.problem-img td button {
+  margin-left: 5px;
+}
+
+p {
+  margin: 0 20px;
+}
