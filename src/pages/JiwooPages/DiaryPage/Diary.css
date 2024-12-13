@@ -1,0 +1,122 @@
+.diary_container {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 20px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  
+  .header {
+    background-color: #d4efdf;
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  
+  .date_weather_container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .date_input {
+    width: 140px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+  }
+  
+  .weather_title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  .weather_icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .weather_icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  
+  .weather_icon.selected {
+    opacity: 1;
+    transform: scale(1.2);
+    border: 2px solid #4CAF50;
+    border-radius: 50%;
+  }  
+  
+  .table_section {
+    margin-top: 20px;
+  }
+  
+  .main_table, .schedule_table, .plan_table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .main_table th, .main_table td, 
+  .schedule_table th, .schedule_table td, 
+  .plan_table th, .plan_table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .header_table {
+    background-color: #d4efdf;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .label_table {
+    background-color: #f8f9f9;
+    text-align: center;
+    width: 20%;
+  }
+  
+  .input_table_cell, .news_table_cell {
+    text-align: left;
+  }
+  
+  .input_tablee {
+    width: 95%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .footer_section {
+    margin-top: 20px;
+  }
+  
+  .footer_table {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+  }
+  
+  .footer_title {
+    background-color: #f8f9f9;
+    width: 30%;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .footer_content {
+    padding: 10px;
+    font-size: 14px;
+  }
+  

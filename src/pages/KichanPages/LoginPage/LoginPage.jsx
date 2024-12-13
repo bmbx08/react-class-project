@@ -8,8 +8,11 @@ const LoginPage = ({setPage}) => {
 
   const handleLogin = () => {
     if(id==="admin"&&password==="1234"){
-        alert("로그인되었습니다.");
-        setPage("ClockPage1");
+      alert("로그인되었습니다.");
+      setPage("ClockPage1");
+    }
+    else{
+      alert("정보가 일치하지 않습니다!");
     }
   };
 
