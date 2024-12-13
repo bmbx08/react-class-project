@@ -9,7 +9,6 @@ const AnalogClock = ({hour,minute}) => {
   return (
     <div>
       <Clock value={value} size="12em"/>
-      {console.log(value)}
     </div>
   );
 };

@@ -8,11 +8,235 @@
     background-color:white;
     padding: 1.5em;
     min-width: 25em;
-    height: 10em;
+    min-height: 10em;
     border: 1px solid gray;
     border-radius: 0.6em;
 }
 
-.problem-table-box{
-    
+.problem-table-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5em;
+}
+
+.problem-table{
+    border:1px solid gray;
+    border-radius: 0.6em;
+    width: 30em;
+    /* height: 20em; */
+    margin-bottom: 1em;
+}
+
+
+.table-header{
+    text-align: center;
+    padding: 0.2em 0;
+    border-bottom: 1px solid gray;
+    /* border-top: 1px solid gray; */
+    border-radius: 0.4em 0.4em 0 0;
+    background-color: #8D9429;
+    color:white;
+    font-family: "Pretendard-Bold";
+}
+
+.table-row{
+    display:flex;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    /* padding: 0.2em 0; */
+}
+
+.table-row:last-child{
+    border-bottom:none;
+}
+
+.row-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-right:1px solid gray;
+    padding: 0.2em 0;
+}
+
+.row-box-1{
+    width: 15%;
+}
+
+.row-box-2{
+    width: 35%;
+}
+
+.row-box-3{
+    width: 50%;
+    border-right: 0;
+}
+
+.period-button-section{
+    margin-right: 0.3em;
+    display:flex;
+}
+
+.period-button{
+    all:unset;
+    margin: 0 0.2em;
+    font-size: 0.9em;
+}
+
+.period-button.selected{
+    border:1px solid red;
+    border-radius: 50%;
+    padding: 0.2em;
+}
+
+.flex-align-center{
+    display:flex;
+    align-items: center;
+}
+
+.time-input-box{
+    margin-right: 0.2em;
+}
+
+.row-box-input{
+    all:unset;
+    width: 2em;
+    border: 1px solid black;
+    border-radius: 0.3em;
+    margin-right: 0.1em;
+    text-align: center;
+    padding: 0.1em 0.1em;
+    color:#7A7A7A;
+}
+
+.A-submit-section{
+    align-self: flex-end;
+    margin-right: 1.5em;
+}
+
+.A-submit-button{
+    all:unset;
+    padding: 0.3em 1em;
+    background-color:#7A7A7A;
+    color:white;
+    border-radius: 0.6em;
+    font-size: 0.9em;
+}
+
+.A-submit-button:hover{
+    background-color:#7a7a7a90;
+}
+
+.table-result-section{
+    font-size: 1.5em;
+    font-family: "Pretendard-Bold";
+}
+
+.choice-box-container{
+    margin-top: 1.5em;
+    width: 30em;
+    min-height: 10em;
+    border: 1px solid gray;
+    border-radius: 0.6em;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0.5em;
+}
+
+.analog-choice-box{
+    width: 45%;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    border: 1px solid gray;
+    border-radius: 0.6em;
+    margin: 0.25em 0.5em;
+}
+
+.B-analog-container{
+    padding: 0.3em 0;
+}
+
+.choice-box-container .react-clock__second-hand__body{
+    display: none;
+}
+
+.clock-input-row{
+    border-top: 1px solid gray;
+    width: 100%;
+    text-align: center;
+    padding: 0.3em 0;
+}
+
+.analog-input{
+    all:unset;
+    width: 3em;
+    border: 1px solid black;
+    border-radius: 0.4em;
+    padding: 0.1em 0;
+}
+
+.analog-result-message{
+    font-family:"Pretendard-Bold";
+}
+
+.analog-result-message.correct{
+    color:green;
+}
+
+.analog-result-message.wrong{
+    color: red;
+}
+
+.B-submit-section{
+    width: 100%;
+    display:flex;
+    justify-content: flex-end;
+    padding-right: 1em;
+}
+
+.B-submit-section button{
+    margin-left: 0.5em;
+}
+
+.B-submit-button{
+    all:unset;
+    padding: 0.3em 1em;
+    background-color:#7A7A7A;
+    color:white;
+    border-radius: 0.6em;
+    font-size: 0.9em;
+    margin-top: 1em;
+}
+
+.B-submit-button:hover{
+    background-color:#7a7a7a90;
+}
+
+.page-change-button{
+    all:unset;
+    all:unset;
+    padding: 0.3em 1em;
+    background-color:#8D9429;
+    color:white;
+    border-radius: 0.6em;
+    font-size: 0.9em;
+    margin-top: 1em;
+}
+
+.page-change-button:hover{
+    background-color: #8d942987;
+}
+
+
+/*number type input 화살표 없애기*/
+.row-box-input::-webkit-inner-spin-button,
+.row-box-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.row-box-input::-ms-clear {
+  display: none;
 }
