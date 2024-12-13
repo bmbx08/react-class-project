@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./Quiz.css"
-import check from "./check.png";
-import plant from "./plant.png";
+import "../StuffPage1/Quiz.css";
+import check from "../StuffPage1/check.png";
+import plant from "../StuffPage1/plant.png";
 
 const correctAnswers = {
   "1-1": "연필",
@@ -20,7 +20,7 @@ const InputField = ({ label, name, onChange, result, value }) => (
     <input
       className="input"
       type="text"
-      value={value || ""} 
+      value={value || ""}
       onChange={(e) => onChange(e, name)}
     />
     {result !== null && (
@@ -88,64 +88,64 @@ const Quiz = () => {
         </table>
       </div>
       <div className="margin">
-              <InputField
-                label="①"
-                name="1-1"
-                value={userAnswers["1-1"]}
-                onChange={InputChange}
-                result={results && results["1-1"]}
-              />
-              <InputField
-                label="②"
-                name="1-2"
-                value={userAnswers["1-2"]}
-                onChange={InputChange}
-                result={results && results["1-2"]}
-              />
-              <InputField
-                label="③"
-                name="1-3"
-                value={userAnswers["1-3"]}
-                onChange={InputChange}
-                result={results && results["1-3"]}
-              />
-              <InputField
-                label="④"
-                name="1-4"
-                value={userAnswers["1-4"]}
-                onChange={InputChange}
-                result={results && results["1-4"]}
-              />
-              <div>
-              <InputField
-                label="⑤"
-                name="2-1"
-                value={userAnswers["2-1"]}
-                onChange={InputChange}
-                result={results && results["2-1"]}
-              />
-              <InputField
-                label="⑥"
-                name="2-2"
-                value={userAnswers["2-2"]}
-                onChange={InputChange}
-                result={results && results["2-2"]}
-              />
-              <InputField
-                label="⑦"
-                name="2-3"
-                value={userAnswers["2-3"]}
-                onChange={InputChange}
-                result={results && results["2-3"]}
-              />
-              <InputField
-                label="⑧"
-                name="2-4"
-                value={userAnswers["2-4"]}
-                onChange={InputChange}
-                result={results && results["2-4"]}
-              />
-            </div>
+        <InputField
+          label="①"
+          name="1-1"
+          value={userAnswers["1-1"]}
+          onChange={InputChange}
+          result={results && results["1-1"]}
+        />
+        <InputField
+          label="②"
+          name="1-2"
+          value={userAnswers["1-2"]}
+          onChange={InputChange}
+          result={results && results["1-2"]}
+        />
+        <InputField
+          label="③"
+          name="1-3"
+          value={userAnswers["1-3"]}
+          onChange={InputChange}
+          result={results && results["1-3"]}
+        />
+        <InputField
+          label="④"
+          name="1-4"
+          value={userAnswers["1-4"]}
+          onChange={InputChange}
+          result={results && results["1-4"]}
+        />
+        <div>
+          <InputField
+            label="⑤"
+            name="2-1"
+            value={userAnswers["2-1"]}
+            onChange={InputChange}
+            result={results && results["2-1"]}
+          />
+          <InputField
+            label="⑥"
+            name="2-2"
+            value={userAnswers["2-2"]}
+            onChange={InputChange}
+            result={results && results["2-2"]}
+          />
+          <InputField
+            label="⑦"
+            name="2-3"
+            value={userAnswers["2-3"]}
+            onChange={InputChange}
+            result={results && results["2-3"]}
+          />
+          <InputField
+            label="⑧"
+            name="2-4"
+            value={userAnswers["2-4"]}
+            onChange={InputChange}
+            result={results && results["2-4"]}
+          />
+        </div>
       </div>
       <div className="underline">
         <img src={check} alt="check Icon" className="img" />

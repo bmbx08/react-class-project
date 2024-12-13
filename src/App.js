@@ -6,7 +6,7 @@ import ClockPage2 from "./pages/KichanPages/ClockPage2/ClockPage2";
 import TreePage1 from "./pages/JooeunPages/TreePage1/TreePage1";
 import TreePage2 from "./pages/JooeunPages/TreePage2/TreePage2";
 import TreePage3 from "./pages/JooeunPages/TreePage3/TreePage3";
-import TreePage4 from "./pages/JooeunPages/TreePage4/TreePage4";
+import TreePage4 from "./pages/JooeunPages/TreePage4/Treepage4";
 import TreePage5 from "./pages/JooeunPages/TreePage5/TreePage5";
 import StuffPage1 from "./pages/JiwooPages/StuffPage1/StuffPage1";
 import StuffPage2 from "./pages/JiwooPages/StuffPage2/StuffPage2";

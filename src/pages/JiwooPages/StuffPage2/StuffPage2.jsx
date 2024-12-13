@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./Quiz.css"
-import check from "./check.png";
-import plant from "./plant.png";
+import "../StuffPage1/Quiz.css"
+import check from "../StuffPage1/check.png";
+import plant from "../StuffPage1/plant.png";
 
 const correctAnswers = {
   기준1: "필기구",
