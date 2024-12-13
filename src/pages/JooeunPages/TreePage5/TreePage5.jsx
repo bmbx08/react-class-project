@@ -143,6 +143,7 @@ const TreePage5 = ({ setPage }) => {
           <br />
           <br />
           <button onClick={() => setPage("TreePage4")}>이전 페이지</button>
+          <button onClick={() => setPage("StuffPage1")}>다음 페이지</button>
         </div>
       </div>
     </div>

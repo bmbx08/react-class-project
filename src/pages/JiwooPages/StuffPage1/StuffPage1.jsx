@@ -36,7 +36,7 @@ const InputField = ({ num, name, onChange, result, value }) => (
   </td>
 );
 
-const Quiz = () => {
+const Quiz1 = ({setPage}) => {
   const [userAnswers, setUserAnswers] = useState({});
   const [results, setResults] = useState(null);
 
@@ -173,9 +173,10 @@ const Quiz = () => {
         <button onClick={Reset} className="button">
           다시 풀기
         </button>
+        <button onClick={()=>setPage("StuffPage2")}>다음 페이지</button>
       </div>
     </div>
   );
 };
 
-export default Quiz; 
+export default Quiz1; 
