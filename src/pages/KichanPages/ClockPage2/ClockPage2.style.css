@@ -6,8 +6,13 @@
 
 .clock-page-2-container{
     background-color:white;
+    padding: 1.5em;
     min-width: 25em;
     height: 10em;
     border: 1px solid gray;
     border-radius: 0.6em;
+}
+
+.problem-table-box{
+    
 }
