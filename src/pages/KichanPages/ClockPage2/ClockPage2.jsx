@@ -4,7 +4,7 @@ import "./ClockPage2.style.css"
 const ClockPage2 = ({setPage}) => {
   return (
     <div>
-      ClockPage2
+      <button onClick={()=>setPage("TreePage1")}>다음 페이지</button>
     </div>
   )
 }
