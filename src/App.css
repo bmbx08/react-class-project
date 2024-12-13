@@ -1,0 +1,35 @@
+@font-face{
+    font-family: 'Pretendard-Regular';
+    font-style: 'normal';
+    src: url('./common/fonts/Pretendard-Regular.otf');
+}
+
+@font-face{
+    font-family: 'Pretendard-Bold';
+    font-style: 'normal';
+    src: url('./common/fonts/Pretendard-Bold.otf');
+}
+
+body{
+    font-family: "Pretendard-Regular";
+}
+
+.text-color{
+    color:#191919;
+}
+
+.sub-text{
+    color: #7A7A7A;
+}
+
+.main-color{
+    color: #DADEAA
+}
+
+.main-color2{
+    color: #4C4E33
+}
+
+.click-color{
+    color:#8D9429
+}

@@ -14,7 +14,7 @@ import DiaryPage from './pages/JiwooPages/DiaryPage/DiaryPage';
 
 
 function App() {
-  const [page,setPage] = useState("StuffPage1");
+  const [page,setPage] = useState("ClockPage1");
 
   return (
     <div>
