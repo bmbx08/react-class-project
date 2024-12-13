@@ -15,7 +15,7 @@ import DiaryPage from "./pages/JiwooPages/DiaryPage/DiaryPage";
 
 
 function App() {
-  const [page, setPage] = useState("TreePage1");
+  const [page, setPage] = useState("LoginPage");
 
   return (
     <div>
