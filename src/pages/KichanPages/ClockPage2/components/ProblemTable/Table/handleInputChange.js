@@ -118,8 +118,3 @@ const handleInputChange=(e,setUserInputObj)=>{
 }
 
 export default handleInputChange;
-
-// {location: "방콕", timeDiff: -2},
-//     {location: "두바이", timeDiff: -5},
-//     {location: "알래스카", timeDiff: -13},
-//     {location: "호주", timeDiff: 1},

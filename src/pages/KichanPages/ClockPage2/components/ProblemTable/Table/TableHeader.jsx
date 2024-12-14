@@ -2,7 +2,6 @@ import React, {useEffect, useState} from "react";
 import makeAnswerObj from "./makeAnswerObj";
 
 const TableHeader = ({setAnswerObj}) => {
-  // const [value, setValue] = useState(new Date(2024,12,12,hour,minute,0));
   const [currentTime, setCurrentTime] = useState({hour: null,minute: null,period: null,});
 
   useEffect(() => {

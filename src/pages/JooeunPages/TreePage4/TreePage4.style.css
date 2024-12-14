@@ -7,7 +7,7 @@
 }
 
 .problem-img {
-  /* margin: 10px 20px; */
+  margin: 10px 20px;
   width: 100%;
 }
 
@@ -30,7 +30,7 @@ p {
 }
 
 input[type="text"] {
-  height: 50px; /* 높이를 원하는 값으로 설정 */
+  height: 50px;
   padding: 5px;
   margin: 5px;
 }

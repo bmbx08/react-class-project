@@ -1,7 +1,6 @@
 .clock-page1 {
   display: flex;
   justify-content: center;
-  /* margin-top: 5em; */
   padding-top: 5em;
   background-color: #dadeaa;
 }
@@ -186,7 +185,6 @@
 }
 
 
-/*number input의 화살표 아이콘 제거*/
 .timeA-input {
   -moz-appearance: textfield; 
   -webkit-appearance: textfield; 
