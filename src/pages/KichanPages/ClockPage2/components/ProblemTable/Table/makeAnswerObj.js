@@ -9,7 +9,7 @@ const createLocationAnswer=({hour,minute,period,diff})=>{
         answerHour+=12;
         answerPeriod = (answerPeriod==="오전"?"오후":"오전");
     }
-    if(answerPeriod>12){
+    if(answerHour>12){
         answerHour-=12;
         answerPeriod = (answerPeriod==="오후"?"오전":"오후");
     }

@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import ChoiceBox from './ChoiceBox';
 
-const ProblemB = ({userTimeObject,answerBoolean,setAnswerBoolean}) => {
+const ProblemB = ({userTimeObject,setAnswerBoolean}) => {
   const [choiceArray,setChoiceArray]=useState([]);
   const [shuffledChoices, setShuffledChoices] = useState(null);
   const [resultMessage, setResultMessage] = useState(null);
+  const [fadeIn, setFadeIn] = useState(false);
 
   const createRandTimeArray=(num)=>{
     let randomTimeObjectArray=[];
@@ -39,6 +40,10 @@ const ProblemB = ({userTimeObject,answerBoolean,setAnswerBoolean}) => {
   }
 
   useEffect(()=>{
+    setFadeIn(true);
+  },[])
+
+  useEffect(()=>{
     let randomTimeArray=createRandTimeArray(3);
     setChoiceArray([
       ...randomTimeArray, userTimeObject, 
@@ -55,7 +60,7 @@ const ProblemB = ({userTimeObject,answerBoolean,setAnswerBoolean}) => {
 
   
   return (
-    <div className="ProblemB-section">
+    <div className={`ProblemB-section ${fadeIn===true?"fade-in":"fade-out"}`}>
       <div className='choice-box-section'>
         {shuffledChoices&&shuffledChoices.map((choice, index)=>(
           <ChoiceBox choice={choice} choiceNum={index+1} handleBSubmit={handleBSubmit}/>

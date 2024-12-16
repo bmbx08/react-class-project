@@ -166,7 +166,7 @@ const Quiz2 = ({setPage}) => {
         <button onClick={Submit} className="button">
           채점
         </button>
-        <button onClick={Reset} className="button_reset">
+        <button onClick={Reset} className="button">
           다시 풀기
         </button>
         <button onClick={()=>setPage("StuffPage3")}>다음 페이지</button>

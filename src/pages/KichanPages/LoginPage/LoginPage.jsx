@@ -8,7 +8,7 @@ const LoginPage = ({setPage}) => {
   const [password, setPassword] = useState("");
 
   const handleLogin = (event) => {
-    if(event.type=="click"||(event.type==="keydown"&&event.key==="Enter")){
+    if(event.type==="click"||(event.type==="keydown"&&event.key==="Enter")){
       if(id==="user"&&password==="1234"){
         alert("로그인되었습니다.");
         setPage("ClockPage1");

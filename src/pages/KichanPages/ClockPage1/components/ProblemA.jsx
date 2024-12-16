@@ -29,6 +29,12 @@ const ProblemA = ({setUserTimeObject,setShowProblemB}) => {
         }
     }
 
+    const handleSubmitButton=(event)=>{
+      if(event.type==="click"||(event.type==="keydown"&&event.key==="Enter")){
+        setShowProblemB(true);
+      }
+    }
+
   return (
     <div className="ProblemA-section">
       <div className="timeA-input-section">
@@ -37,15 +43,15 @@ const ProblemA = ({setUserTimeObject,setShowProblemB}) => {
           <button className={`time-radio ${selectedRadio==="PM"?"selected":""}`} onClick={(e)=>handleTimeRadio(e)}>오후</button>
         </div>
         <div className="timeA-input-box">
-          <input onChange={(event)=>handleTimeInput(event)} type="number" name="hour" className="timeA-input"/> 시
+          <input onChange={(event)=>handleTimeInput(event)} onKeyDown={handleSubmitButton} type="number" name="hour" className="timeA-input"/> 시
         </div>
         <div className="timeA-input-box">
-          <input onChange={(event)=>handleTimeInput(event)} type="number" name="minute" className="timeA-input"/> 분
+          <input onChange={(event)=>handleTimeInput(event)} onKeyDown={handleSubmitButton} type="number" name="minute" className="timeA-input"/> 분
         </div>
         <div className="redd-text">{selectedRadio}</div>
       </div>
       <div className="ProblemA-submit-section">
-        <button className="ProblemA-submit-button" onClick={()=>{setShowProblemB(true)}}>입력</button>
+        <button className="ProblemA-submit-button" onClick={handleSubmitButton}>입력</button>
       </div>
       
     </div>
