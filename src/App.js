@@ -12,13 +12,15 @@ import Quiz1 from "./pages/JiwooPages/StuffPage1/StuffPage1";
 import Quiz2 from "./pages/JiwooPages/StuffPage2/StuffPage2";
 import Quiz3 from "./pages/JiwooPages/StuffPage3/StuffPage3";
 import DiaryPage from "./pages/JiwooPages/DiaryPage/DiaryPage";
+import Navbar from "./pages/KichanPages/Navbar/Navbar";
 
 
 function App() {
-  const [page, setPage] = useState("ClockPage1");
+  const [page, setPage] = useState("LoginPage");
 
   return (
     <div>
+      <Navbar/>
       {page === "LoginPage" && <LoginPage setPage={setPage} />}
       {page === "ClockPage1" && <ClockPage1 setPage={setPage} />}
       {page === "ClockPage2" && <ClockPage2 setPage={setPage} />}
