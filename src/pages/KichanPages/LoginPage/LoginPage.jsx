@@ -7,13 +7,15 @@ const LoginPage = ({setPage}) => {
   const [id, setId] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleLogin = () => {
-    if(id==="user"&&password==="1234"){
-      alert("로그인되었습니다.");
-      setPage("ClockPage1");
-    }
-    else{
-      alert("정보가 일치하지 않습니다!");
+  const handleLogin = (event) => {
+    if(event.type=="click"||(event.type==="keydown"&&event.key==="Enter")){
+      if(id==="user"&&password==="1234"){
+        alert("로그인되었습니다.");
+        setPage("ClockPage1");
+      }
+      else{
+        alert("정보가 일치하지 않습니다!");
+      }
     }
   };
 
@@ -28,8 +30,8 @@ const LoginPage = ({setPage}) => {
           </div>
         </div>
         <div className="login-box">
-          <LoginInputRow sort="id" setInputContent={setId} />
-          <LoginInputRow sort="password" setInputContent={setPassword} />
+          <LoginInputRow sort="id" setInputContent={setId} handleLogin={handleLogin}/>
+          <LoginInputRow sort="password" setInputContent={setPassword} handleLogin={handleLogin}/>
         </div>
         <button onClick={handleLogin} className="login-button">
           로그인
